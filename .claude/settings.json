@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(python -m http.server 8080)",
+      "Bash(node --check js/app.js)",
+      "Bash(curl -s http://localhost:8080/)",
+      "Bash(curl -s http://localhost:8080/data/students.json)",
+      "Bash(python -m json.tool)"
+    ],
+    "additionalDirectories": [
+      "D:\\Users\\21202\\Documents\\文件\\工作室\\projects\\Student_Analysis"
+    ]
+  }
+}

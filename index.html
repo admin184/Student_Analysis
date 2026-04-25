@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>实训表现数字化分析平台</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>实训表现数字化分析平台</h1>
+      <p class="subtitle">《服务器技术应用》项目一 · 核心技术维度雷达图分析</p>
+    </header>
+
+    <div class="toolbar">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="搜索姓名或学号..." autocomplete="off">
+      </div>
+      <div class="actions">
+        <label class="upload-btn">
+          <input type="file" id="fileInput" accept=".xlsx,.xls" hidden>
+          上传 Excel
+        </label>
+        <button id="loadPresetBtn" class="btn-secondary">加载预设数据</button>
+      </div>
+    </div>
+
+    <div class="drop-zone" id="dropZone">
+      <div class="drop-hint">
+        <p>拖拽 Excel 文件到此处，或点击上方按钮上传</p>
+        <p class="small">支持 .xlsx / .xls 格式</p>
+      </div>
+    </div>
+
+    <div class="stats-bar" id="statsBar" style="display:none;">
+      <span id="statsText"></span>
+    </div>
+
+    <div class="dashboard" id="dashboard"></div>
+
+    <div class="empty-state" id="emptyState">
+      <p>暂无数据，请点击「加载预设数据」或上传 Excel 文件</p>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import pandas as pd; df = pd.read_excel\\('docx/信安2501班-项目1—应用测试.xlsx'\\); print\\(df.head\\(20\\)\\); print\\(list\\(df.columns\\)\\)\")",
+      "Bash(python -c \"import pandas as pd; df = pd.read_excel\\('docx/信安2501班-项目1—应用测试.xlsx'\\); print\\(df.head\\(20\\)\\); print\\(list\\(df.columns\\)\\)\")"
+    ]
+  }
+}
